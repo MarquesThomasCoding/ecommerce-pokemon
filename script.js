@@ -9,7 +9,7 @@ const searchPokemon = () => {
 
 // Fonction pour rediriger vers la page du Pokémon recherché
 const returnPokemon = (pokemon) => {
-    window.location.href = "/product.html?pokemon=" + pokemon
+    window.location.href = "./product.html?pokemon=" + pokemon
 }
 
 // Récupération du bouton de recherche dans le DOM
