@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PokeShop | Product</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-title">PokeShop</span>
+        <ul class="navbar-nav">
+            <li class="navbar-item"><a href="/index.html"><img src="/imgs/home.png" alt="Home"></a></li>
+            <li class="navbar-item"><a href="/shopping-cart.html"><img src="/imgs/cart.png" alt="Cart"></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="pokemon-section">
+            <div class="pokemon-card hidden">
+                <div class="pokemon">
+                    <div class="pokemon-header">
+                        <img class="pokemon-card-img" src="" alt="">
+                        <div class="pokemon-header-text">
+                            <h2 class="pokemon-card-name"></h2>
+                            <span class="title-section">Types : </span>
+                            <ul class="pokemon-card-types"></ul>
+                        </div>
+                    </div>
+                    <div class="pokemon-price">
+                        <span class="pokemon-card-price"></span>
+                        <button class="add-cart">➕ Add to cart</button>
+                    </div>
+                    <div class="pokemon-card-info">
+                        <div class="pokemon-abilities">
+                            <span class="title-section">Abilities</span>
+                            <ul class="pokemon-card-abilities"></ul>
+                        </div>
+                        <div class="pokemon-stats">
+                            <span class="title-section">Statistics</span>
+                            <ul class="pokemon-card-stats"></ul>
+                        </div>
+                        <div class="pokemon-evolutions">
+                            <span class="title-section">Evolutions</span>
+                            <ul class="pokemon-card-evolutions"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="pop-up-validation hidden">
+        <span class="pop-up-validation-text">Pokemon ajouté au panier !</span>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="addToCart.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>

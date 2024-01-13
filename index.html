@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>PokeShop | Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-title">PokeShop</span>
+        <ul class="navbar-nav">
+            <li class="navbar-item active"><a href="/index.html"><img src="/imgs/home.png" alt="Home"></a></li>
+            <li class="navbar-item"><a href="/shopping-cart.html"><img src="/imgs/cart.png" alt="Cart"></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>PokeShop</h1>
+        <section class="search-section">
+            <input class="search-input" id="pokemon-value" type="text" name="search" placeholder="Search a pokemon by his name or ID">
+            <button id="search-btn" type="submit">🔎</button>
+        </section>
+
+        <section class="summary-pokemon">
+            <aside class="filters">
+                <span class="filters-title">Filters</span>
+                <div class="filters-types">
+                    <span class="filters-title">Types</span>
+                    <ul class="filters-types-list">
+                    </ul>
+                </div>
+            </aside>
+            <div class="list">
+                <span class="summary-title">20 random pokemons</span>
+                <ul class="summary-pokemon-list">
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="pop-up-validation hidden">
+        <span class="pop-up-validation-text"></span>
+    </div>
+
+    <script src="index-anim.js"></script>
+    <script src="addToCart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

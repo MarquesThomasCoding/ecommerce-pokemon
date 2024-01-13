@@ -1,0 +1,98 @@
+.cart-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 20px;
+    color: cadetblue;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.cart-list tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.cart-list tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+.cart-list tr td {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-pokemon-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.cart-pokemon-img {
+    width: 50px;
+    object-fit: contain;
+}
+
+.cart-pokemon-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-remove {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #e7e5e5;
+}
+
+.cart-remove:hover {
+    border: 1px solid red;
+    background-color: red;
+}
+
+.buy-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.total-price {
+    font-size: 2rem;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 3px solid cadetblue;
+    color: cadetblue;
+}
+
+.buy-cart-btn {
+    width: fit-content;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: cadetblue;
+    color: white;
+}
+
+.buy-cart-btn:hover {
+    background-color: #0e9aa7;
+}
