@@ -199,3 +199,9 @@ recupPokemon()
 if(shoppingCart.includes(pokemon)) {
     document.querySelector('.add-cart').setAttribute('disabled', 'disabled')
 }
+
+// Ecoute de l'événement click sur le bouton 'Add to cart'
+const addToCartBtn = document.querySelector('.add-cart');
+addToCartBtn.addEventListener('click', () => {
+    addToCart(pokemon);
+});
